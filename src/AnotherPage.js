@@ -27,7 +27,7 @@ const AnotherPage = () => {
       age: '',
       location: '',
     });
-    setCurrentPage(1); // Reset to the first page after submission
+    setCurrentPage(1); 
   };
 
   const handlePageChange = (pageNumber) => {
@@ -106,7 +106,7 @@ const AnotherPage = () => {
             </div>
           ))}
 
-          {/* Pagination Controls */}
+        
           {totalPages > 1 && (
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
               {Array.from({ length: totalPages }, (_, index) => index + 1).map((pageNumber) => (
